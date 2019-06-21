@@ -1,0 +1,25 @@
+html {
+    @include width_height_element($width-html, $height-html);
+    @include bgColor_fontFamily_fontSize($bg-color-home, $standard-font, $standard-font-size);
+    @include page_layout_with_flexbox(center, center, row wrap);
+}
+
+#table-education-container {
+    @include page_layout_with_flexbox(center, center, row wrap);
+    @include width_height_element(100%, 450px);
+    background-color: green;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid white;
+    
+    th {
+        border-collapse: collapse;
+        border: 2px solid white;
+    }
+    td {
+        border-collapse: collapse;
+        border: 2px solid white;
+    }
+}

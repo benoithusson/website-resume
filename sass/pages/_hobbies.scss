@@ -1,0 +1,63 @@
+html {
+    @include width_height_element($width-html, $height-html);
+    @include bgColor_fontFamily_fontSize($bg-color-home, $standard-font, $standard-font-size);
+}
+
+
+/******* Container ********/ 
+#container {
+    @include width_height_element(100%, 100%);
+    @include page_layout_with_flexbox(space-around, center, row wrap);
+}
+
+.bloc-interest {
+    @include width_height_element(300px, 500px);
+    @include page_layout_with_flexbox(flex-start, center, column wrap); // To put the video at the top of the .bloc-interest column
+    border-radius:      15px;
+}
+
+
+/******* Video ********/ 
+.video-interest {
+    width:              100%;
+    height:             180px;
+    padding:            15px 0 15px 0;
+    background-color:   black;
+}
+
+
+/******* Text ********/ 
+.text-interest {
+    display:            none; // To hide the text in the bloc-interest. It will be revealed through animation with pseudo-class :hover
+    position:           absolute;
+    top:                250px;
+    width:              300px;
+    height:             550px;
+}
+     
+.title-interest {
+    @include page_layout_with_flexbox(center, center, column wrap); // To put <h2> in middle of the bloc-interest
+    color:              black;
+    margin-bottom:      30px;
+}
+ 
+
+/******* Animations ********/ 
+.video-interest:hover + .text-interest  {
+    display:            block; // Revealed the bloc containing the text
+    background-color:   rgba(255, 255, 255, 0.4); // Add background
+    border:             1px solid black;
+}
+
+/******* Others ********/ 
+li {
+    font-size:          18px;
+    line-height:        33px;
+    padding-right:      15px;
+    letter-spacing:     0.7px;
+    margin:             5px 0 5px 0;
+}
+
+span {
+    text-decoration: underline;
+}

@@ -1,0 +1,76 @@
+/* Mixin to define width and height to an element */
+@mixin width_height_element($width, $height) {
+    width:              $width;
+    height:             $height;
+}
+
+/* Mixin to define background-color + font-family + font-size for a page */
+@mixin bgColor_fontFamily_fontSize($background-color, $font-family, $font-size) {
+    background-color:   $bg-color-home;
+    font-family:        $standard-font;
+    font-size:          $standard-font-size;
+}
+
+/* Mixin center element with flexbox */
+@mixin page_layout_with_flexbox($justify-content, $align-items, $flex-flow) {
+    display:            flex;
+    align-items:        $align-items;
+    justify-content:    $justify-content;
+    flex-flow:          $flex-flow;
+}
+
+
+/* Mixin to override link's style */
+@mixin override_standard_style_link($color, $text-decoration) {
+    color:              $color;
+    text-decoration:    $text-decoration;
+}
+
+
+/* Mixins animation */
+@mixin keyframes($animation_name) {
+    @-webkit-keyframes #{$animation_name} {
+        @content
+    }
+    @-moz-keyframes #{$animation_name} {
+        @content
+    }
+    @-ms-keyframes #{$animation_name} {
+        @content
+    }
+    @-o-keyframes #{$animation_name} {
+        @content
+    }
+    @keyframes #{$animation_name} {
+        @content
+    }
+}
+
+@mixin animation($animation_parameters) {
+    -webkit-animation:  $animation_parameters;
+    -moz-animation:     $animation_parameters;
+    -o-animation:       $animation_parameters;
+    animation:          $animation_parameters;
+}
+
+/* Mixins Responsive Design */
+@mixin small_device {
+    @media (min-width: #{$small-device}) {
+        @content;
+    }
+}
+@mixin medium_device {
+    @media (min-width: #{$medium-device}) {
+        @content;
+    }
+}
+@mixin large_device {
+    @media (min-width: #{$large-device}) {
+        @content;
+    }
+}
+@mixin extra_large_device {
+    @media (min-width: #{$extra-large-device}) {
+        @content;
+    }
+}

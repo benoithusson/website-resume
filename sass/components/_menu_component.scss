@@ -1,0 +1,56 @@
+/* Question : Should I do mixins for menu element ?*/
+
+/* Menu Block on page's side when menu page is closed */
+#menu {
+        @include page_layout_with_flexbox(center, center, column wrap);
+        height:           100px; 
+        width:            50px;
+        position:         absolute;
+        top:              250px;
+        left:             0px;
+        font-size:        13px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border:           1px solid black;
+}
+
+
+/* Button to close menu page */
+#div-close-menu { 
+        background-color: transparent;
+        position:         absolute;
+        border:           none;
+        left:             620px;
+        top:              120px;
+        margin:           auto;
+        display:          none;
+        font-size:        30px;
+        &:hover { // Add of interactions
+                font-size:  70px;
+                color:      black;
+        }
+}
+
+/* Positionning Links into menu page when it is opened */
+#links-menu {
+        @include page_layout_with_flexbox(center, center, column wrap);
+        width:             600px;
+        height:            600px;
+        display:           none; // Links appear with "display: block" through JS with show_or_hide_menu() function 
+}
+
+/* Customize <li> on menu page */
+#links-menu li {
+        list-style-type:   none;
+        text-align:        center;
+        font-size:         40px;
+
+        a {
+                @include override_standard_style_link(black, none);
+                line-height:    90px;
+
+                &:hover {
+                        font-size:       50px;
+                        text-decoration: underline;
+                }
+        }
+}  

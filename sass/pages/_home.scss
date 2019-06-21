@@ -1,0 +1,113 @@
+html {
+    @include width_height_element($width-html, $height-html);
+
+    @include page_layout_with_flexbox(center, center, row wrap); 
+    
+    background-color: $bg-color-home;
+}
+
+
+/* The div containing the white blocs */
+#container-bloc {
+    @include width_height_element($width-container, $height-container);
+
+    @include page_layout_with_flexbox(center, center, row wrap);
+
+    /* Responsive */
+    @include small_device {
+        @include width_height_element(360px, 700px);
+        @include page_layout_with_flexbox(center, center, column wrap);
+    }
+
+    @include medium_device {
+        @include width_height_element(500px, 700px);
+        @include page_layout_with_flexbox(center, center, column wrap);
+    }
+
+    @include large_device {
+        @include width_height_element(780px, 300px);
+        @include page_layout_with_flexbox(space-around, center, row wrap);
+    }
+
+    @include extra_large_device {
+        @include width_height_element(780px, 300px);
+        @include page_layout_with_flexbox(space-around, center, row wrap);
+    }
+}
+
+
+/* Class for navigation white blocs in the center of the page */
+.nav-bloc-home-page {
+    @include width_height_element($width-nav-bloc, $height-nav-bloc);
+    
+    @include page_layout_with_flexbox(center, center, row wrap);
+    
+    /* Responsive */
+    @include small_device {
+        @include width_height_element(340px, 130px);
+        border:         1px solid black;
+        font-size:      25px;
+        margin-top:     15px;
+        margin-bottom:  15px;
+    }
+
+    @include medium_device {
+        @include width_height_element(340px, 130px);
+        font-size:      20px;
+    }
+
+    @include large_device {
+        @include width_height_element(350px, 120px);
+        font-size:      23px;
+    }
+
+    @include extra_large_device {
+        @include width_height_element(350px, 120px);
+        font-size:      18px;
+    }
+
+    font-size:          $font-size-nav-bloc;
+    font-family:        $standard-font;
+    border-radius:      $border-radius-nav-bloc;
+    background-color:   $bg-color-nav-bloc;
+
+    &:hover {
+            @include animation(animation_border_radius 0.2s linear forwards);
+    }
+}
+
+
+/* Animation for navigation blocs for more interaction */
+@include keyframes(animation_border_radius) {
+    0% {
+        font-size:      18px;
+        border-radius:  5px;
+        letter-spacing: 0;
+    }
+    20% {
+        font-size:      20px;
+        border-radius:  8px;
+        letter-spacing: 1px;
+    }
+    50% {
+        font-size:      22px;
+        border-radius:  10px;
+        letter-spacing: 2px;
+    }
+    70% {
+        font-size:      24px;
+        border-radius:  12px;
+        letter-spacing: 4px;
+    }
+    100% {
+        font-size:      26px;
+        border-radius:  14px;
+        letter-spacing: 5px;
+    }
+}
+
+
+/* Links into the white blocs */
+a {
+    @include override_standard_style_link($font-color-home, none);
+}

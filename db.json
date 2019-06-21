@@ -1,0 +1,30 @@
+{
+    
+    "education": [
+        {
+            "school":   "IFOCOP",
+            "degree":   "Full Stack JavaScript Developer",
+            "location": "Paris ( France )",
+            "date":     "2018"
+        },
+        {
+            "school":   "MBA PPA",
+            "degree":   "MBA e-Business & Digital Marketing",
+            "location": "Paris ( France )",
+            "date":     "2016 / 2017"
+        },
+        {
+            "school":   "ESB Reutlingen / EM Strasbourg",
+            "degree":   "Master European Management Studies",
+            "location": "Reutlingen ( Germany ) / Strasbourg ( France)",
+            "date":     "2014 / 2016"
+        },
+        {
+            "school":   "Francois Rabelais University",
+            "degree":   "Bachelor",
+            "location": "Tours ( France )",
+            "date":     "2009 / 2012"
+        }
+        
+    ]
+}

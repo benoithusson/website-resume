@@ -1,0 +1,63 @@
+/******** A) General Settings *********/
+$standard-font:             'ZCOOL KuaiLe', cursive, helvetica;
+$standard-font-size:        20px;
+$width-html:                100%;
+$height-html:               100%;
+
+/* Color */
+$white:                     white;
+$black:                     black;
+$red:                       red;
+$blue:                      blue;
+$green:                     green;
+$yellow:                    yellow;
+$grey:                      grey;
+
+
+/******** B) Variables for _home.scss *********/
+
+/* 1) General Settings */
+$bg-color-home:             #008cff;
+$font-color-home:           #000000;
+
+/* 2) Variables for the container */
+$width-container:           950px;
+$height-container:          350px;
+
+/* 3) White Blocs for navigation */
+$bg-color-nav-bloc:         #ffffff;
+$height-nav-bloc:           150px;
+$width-nav-bloc:            350px;
+$border-radius-nav-bloc:    5px;
+$margin-nav-bloc:           10px;
+$font-size-nav-bloc:        18px;
+
+/* 4) Breakpoints */
+$small-device:          576px;
+$medium-device:         768px;
+$large-device:          992px;
+$extra-large-device:    1200px;
+
+
+/******** C) Variables for _hobbies.scss *********/
+
+/* 1) General settings */
+$bg-hobbies:                #f58420;
+$font-color-hobbies:        #ffffff;
+
+/* 2) Variables .box-interest */
+$radius-box-interest:       10px;
+$bg-box-interest:           $black;
+
+/* 3) Variables .video-interest */
+
+
+/* 4) Variables .text-interest */
+$bg-text-interest:         rgb(140, 140, 140);
+$font-color-text-interest: $black;
+$font-size-text-interest:  19px;
+
+/* 5) Variables <li> in bloc text */
+$line-height-li:           50px;
+$letter-spacing-li:        0.5px;
+$padding-right-li:         15px;
