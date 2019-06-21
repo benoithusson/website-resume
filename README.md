@@ -105,5 +105,8 @@ Why this structure ?
 1. Due to overrinding variables problems, I've choosen to create a "main.scss" file for each html page.
 
 2. Furthermore, each html page has a different structure. That's the reason why I don't the layout file.
+-------
 
-Á terminer
+db.json
+=====
+https://github.com/typicode/json-server
