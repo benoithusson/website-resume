@@ -1,3 +1,7 @@
+TO-DO :
+=====
+> skills.html
+
 
 CSS File : Contain the compiled files of scss into css
 =====
