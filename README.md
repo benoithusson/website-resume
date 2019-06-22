@@ -1,11 +1,12 @@
 TO-DO :
 =====
 > skills.html
+> Responsive for interests.html, contacts.html
 
 
 CSS File : Contain the compiled files of scss into css
 =====
-hobbies.css = compiled file of _hobbies.scss
+interests.css = compiled file of _interests.scss
 
 education.css = compiled file of _education.scss
 
@@ -18,12 +19,12 @@ HTML File : Contain the different html pages
 =====
 index.html is not included (it's on the root)
 
-hobbies.html, education.html, skills.html, contacts.html
+interests.html, education.html, skills.html, contacts.html
 
 
 JS File : Contain the different JS scripts
 =====
-hobbies.js, education.js, skills.js, jquery.js, menu_component.js
+interests.js, education.js, skills.js, jquery.js, menu_component.js
 
 menu_component.js = script for the menu component
 
@@ -88,7 +89,7 @@ _contact.scss      # Contact specific styles
 
 _skills.scss       # Skills specific styles
 
-_hobbies.scss      # Hobbies specific styles
+_interests.scss    # interests specific styles
 
 _education.scss    # Education specific styles
 
@@ -97,7 +98,7 @@ root
 -------
 – index.scss             # Sass file for index.html
 
- – hobbies.scss           # Sass file for hobbies.html
+ – interests.scss        # Sass file for interests.html
  
  – skills.scss            # Sass file for skills.html
  
