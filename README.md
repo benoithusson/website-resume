@@ -13,6 +13,8 @@ TO-DO :
 
 6. Update videos
 
+7. Optimisations
+
 CSS File : Contain the compiled files of scss into css
 =====
 interests.css = compiled file of _interests.scss
