@@ -28,7 +28,7 @@ table {
     }
 }
 
-
+/* Styling the button for ajax call */
 #container-button {
     @include page_layout_with_flexbox(center, center, row wrap);
     position : fixed;
@@ -42,7 +42,7 @@ table {
         width:              300px;
         height:             50px;
         border:             1px solid rgb(247, 244, 244);
-        border-radius:      5px;
+        border-radius:      6px;
         background-color:   rgb(34, 182, 34);
     }
 }
