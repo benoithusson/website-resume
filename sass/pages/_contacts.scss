@@ -1,0 +1,37 @@
+html {
+    @include width_height_element($width-html, $height-html);
+    @include bgColor_fontFamily_fontSize($bg-color-home, $standard-font, $standard-font-size);
+    @include page_layout_with_flexbox(center, center, row wrap);
+    color: white;
+}
+
+#container {
+    @include width_height_element(1200px, 800px);
+    @include page_layout_with_flexbox(space-between, center, row wrap);
+}
+
+.bloc {
+    @include page_layout_with_flexbox(flex-start, center, column wrap);
+    width:  350px;
+    height: 500px;
+    border: 1px solid white;    
+}
+
+// Add interaction when user is over bloc contact
+.bloc:hover {
+    border-radius:      20px;
+    border:             1px solid greenyellow;
+    h2 {
+        text-decoration: underline;
+    }
+}
+
+// Override <a> link default style
+a {
+    @include override_standard_style_link(white, none);
+}
+
+// Add interaction when user is on <a> link
+a:hover {
+    color: greenyellow;
+}
