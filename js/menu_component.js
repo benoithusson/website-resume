@@ -8,6 +8,7 @@ const menu_obj = {
     bg_color_menu:       ["rgba(255, 255, 255, 0.5)", "rgba(255, 255, 255, 0.7)"],
     links_menu:          document.getElementById("links-menu"),
     menu_title:          document.getElementById("menu-title"),
+    ajax_call_btn:       document.getElementById('container-button'),
 
     show_or_hide_menu() {
         this.menu.addEventListener('mouseover', (e) => {
@@ -18,6 +19,7 @@ const menu_obj = {
             this.menu_title.style.display =          'none';
             this.btn_close_menu.style.display =      'block';
             this.links_menu.style.display =          'block';
+            this.ajax_call_btn.style.display =       'none';
         });
         this.btn_close_menu.addEventListener('click', (e) => {
             this.menu.style.background =             this.bg_color_menu[0];
@@ -27,6 +29,7 @@ const menu_obj = {
             this.links_menu.style.display =          'none';
             this.btn_close_menu.style.display =      'none';
             this.menu_title.style.display =          'block';
+            this.ajax_call_btn.style.display =       'block';
         });
     }    
 };

@@ -1,4 +1,5 @@
 'use strict';
+// FAIRE OBJET !!!!!!!!!!!!!!!!!!!
 
 // <td class="degree">
 const td_degree =       document.getElementsByClassName('degree');
@@ -13,10 +14,11 @@ const td_location =     document.getElementsByClassName('location');
 const td_date =         document.getElementsByClassName('date');
 
 
+// AJAX CALL
 $(document).ready(function() {
 
     /******* TO GET DATAS ********/
-    $('#button-get-data').on('click', function() {
+    $('#button-get-data').on('click', function(e) {
 
         $.ajax({
     
@@ -53,5 +55,3 @@ $(document).ready(function() {
         });
     });
 });
-
-
