@@ -1,5 +1,6 @@
 'use strict';
 // FAIRE OBJET !!!!!!!!!!!!!!!!!!!
+// Mettre indication faire json-server --watch db.json au démarrage du projet sinon ajax call ne fonctionne pas !!!
 
 // <td class="degree">
 const td_degree =       document.getElementsByClassName('degree');
