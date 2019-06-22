@@ -7,6 +7,8 @@ TO-DO :
 
 3. < h1 > on the pages for better SEO
 
+4. Cross-Browser Compatibility
+
 CSS File : Contain the compiled files of scss into css
 =====
 interests.css = compiled file of _interests.scss
