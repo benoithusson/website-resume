@@ -110,8 +110,7 @@ Why this structure ?
 db.json = https://github.com/typicode/json-server
 =====
 
-JSON file uses for education.html : he goal of this page is to use an ajax request to get the datas from this file in order to 
-fill the table.
+JSON file uses for education.html : the goal of this page is to use an ajax request to get the datas from db.json in order to fill the table.
 
 1. npm install -g json-server
 2. Create a db.json file with some data
