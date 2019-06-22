@@ -5,6 +5,7 @@ TO-DO :
 
 2. Responsive for interests.html, contacts.html
 
+3. <h1> on the page for better SEO
 
 CSS File : Contain the compiled files of scss into css
 =====
