@@ -1,7 +1,9 @@
 TO-DO :
 =====
-> skills.html
-> Responsive for interests.html, contacts.html
+
+1. skills.html
+
+2. Responsive for interests.html, contacts.html
 
 
 CSS File : Contain the compiled files of scss into css
