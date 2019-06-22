@@ -34,7 +34,7 @@ table {
     position : fixed;
     width:     400px;
     bottom:    100px;
-    left:      100px;
+    left:      50px;
     
     #button-get-data {
         @include page_layout_with_flexbox(center, center, row wrap);
