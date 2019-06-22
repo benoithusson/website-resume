@@ -4,12 +4,13 @@ html {
     @include page_layout_with_flexbox(center, center, row wrap);
 }
 
+/* Center the table in the page */
 #table-education-container {
     @include page_layout_with_flexbox(center, center, row wrap);
     @include width_height_element(100%, 450px);
-    background-color: green;
 }
 
+/* Styling the table */
 table {
     border-collapse: collapse;
     border: 2px solid white;
@@ -17,9 +18,32 @@ table {
     th {
         border-collapse: collapse;
         border: 2px solid white;
+        padding: 20px;
     }
+    
     td {
         border-collapse: collapse;
         border: 2px solid white;
+        padding: 20px;
     }
 }
+
+
+#container-button {
+    @include page_layout_with_flexbox(center, center, row wrap);
+    position : fixed;
+    width:     400px;
+    bottom:    100px;
+    left:      100px;
+    
+    #button-get-data {
+        @include page_layout_with_flexbox(center, center, row wrap);
+        color:              white;
+        width:              300px;
+        height:             50px;
+        border:             1px solid rgb(247, 244, 244);
+        border-radius:      5px;
+        background-color:   rgb(34, 182, 34);
+    }
+}
+

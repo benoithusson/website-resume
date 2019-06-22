@@ -15,7 +15,8 @@ const td_date =         document.getElementsByClassName('date');
 
 $(document).ready(function() {
 
-    $('#button-data').on('click', function() {
+    /******* TO GET DATAS ********/
+    $('#button-get-data').on('click', function() {
 
         $.ajax({
     
@@ -31,6 +32,7 @@ $(document).ready(function() {
             // If we get a response from the server, the following function is executed.
             // "data" contains the server response. It is an array of objects
             success: function(data) { 
+                    console.log("GET ajax Request : SUCCESS", data);
 
                     // For every object in the array...
                     for(let object in data) {
@@ -46,10 +48,10 @@ $(document).ready(function() {
     
             // Function executed if an error occured during the request
             error: function(error_ajax) {
-                console.log('Error AJAX:' + error_ajax);
+                console.log('GET ajax Request : ERROR:' + error_ajax);
             }
         });
     });
-})
+});
 
 
