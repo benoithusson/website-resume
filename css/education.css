@@ -112,7 +112,7 @@ table {
   position: fixed;
   width: 400px;
   bottom: 100px;
-  left: 100px; }
+  left: 50px; }
   #container-button #button-get-data {
     display: flex;
     align-items: center;
