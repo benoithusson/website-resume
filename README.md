@@ -9,6 +9,8 @@ TO-DO :
 
 4. Cross-Browser Compatibility
 
+5. Improve page loading : https://developer.yahoo.com/performance/rules.html?guccounter=1
+
 CSS File : Contain the compiled files of scss into css
 =====
 interests.css = compiled file of _interests.scss
