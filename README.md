@@ -1,3 +1,8 @@
+IMPORTANT !
+=====
+For the page "education.html", write the command line in the terminal before click on the "ajax request button" : 
+json-server --watch db.json
+
 TO-DO :
 =====
 
@@ -14,6 +19,8 @@ TO-DO :
 6. Update videos
 
 7. Optimisations
+
+8. Tcheck for variables in scss
 
 CSS File : Contain the compiled files of scss into css
 =====
