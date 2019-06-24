@@ -1,6 +1,6 @@
 IMPORTANT !
 =====
-For the page "education.html", write the command line in the terminal before click on the "ajax request button" : 
+For the page "education.html", write the command line in the terminal before to click on the "ajax request button" : 
 json-server --watch db.json
 
 TO-DO :
