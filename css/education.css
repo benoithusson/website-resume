@@ -125,6 +125,3 @@ table {
     border-radius: 6px;
     background-color: #22b622;
     font-size: 15px; }
-
-#menu:active #container-button {
-  display: none; }
