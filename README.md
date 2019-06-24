@@ -20,6 +20,8 @@ TO-DO :
 
 7. Optimisations
 
+8. Tcheck for variables in scss
+
 CSS File : Contain the compiled files of scss into css
 =====
 interests.css = compiled file of _interests.scss
